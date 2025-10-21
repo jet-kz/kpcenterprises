@@ -30,6 +30,14 @@ const fadeInRight: Variants = {
 };
 
 export default function Hero() {
+  const services = [
+    { icon: MdCake, text: "Weddings" },
+    { icon: MdPeople, text: "Corporate Events" },
+    { icon: MdRestaurant, text: "Private Dinners" },
+    { icon: MdEvent, text: "Luxury Banquets" },
+    { icon: MdLocalShipping, text: "Full Service" },
+  ];
+
   return (
     <section id="home" className="relative overflow-hidden bg-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 py-20 flex flex-col lg:flex-row items-center gap-12">
@@ -39,7 +47,7 @@ export default function Hero() {
           variants={fadeInLeft}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }} // 👈 Animate every time visible
+          viewport={{ once: false, amount: 0.3 }}
         >
           <motion.h1
             className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight text-gray-900"
@@ -68,7 +76,7 @@ export default function Hero() {
             viewport={{ once: false }}
           >
             <a
-              href={`https://wa.me/2347080125998?text=${encodeURIComponent(
+              href={`https://wa.me/2347080215998?text=${encodeURIComponent(
                 "Hello 👋, I’d like to place an order."
               )}`}
               target="_blank"
@@ -93,7 +101,7 @@ export default function Hero() {
           variants={fadeInRight}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }} // 👈 Animate every scroll entry
+          viewport={{ once: false, amount: 0.3 }}
         >
           <motion.div
             animate={{ y: [0, -10, 0] }}
@@ -115,6 +123,34 @@ export default function Hero() {
               />
             </div>
           </motion.div>
+        </motion.div>
+      </div>
+
+      {/* ---------- MARQUEE SECTION ---------- */}
+      <div className="relative border-t border-gray-100 bg-gradient-to-r from-[#fff7e6] via-white to-[#fff7e6] py-4 overflow-hidden">
+        <motion.div
+          className="flex whitespace-nowrap animate-marquee"
+          initial={{ x: 0 }}
+          animate={{ x: "-50%" }}
+          transition={{
+            repeat: Infinity,
+            ease: "linear",
+            duration: 18,
+          }}
+        >
+          {[...Array(2)].map((_, repeatIndex) => (
+            <div key={repeatIndex} className="flex items-center gap-8 px-8">
+              {services.map(({ icon: Icon, text }, i) => (
+                <div
+                  key={i + repeatIndex}
+                  className="flex items-center gap-2 px-5 py-2 bg-white/80 border border-[#f6e4c5] rounded-full shadow-sm text-[#6b3e26] font-medium"
+                >
+                  <Icon size={22} className="text-[#d4af37]" />
+                  <span>{text}</span>
+                </div>
+              ))}
+            </div>
+          ))}
         </motion.div>
       </div>
     </section>
