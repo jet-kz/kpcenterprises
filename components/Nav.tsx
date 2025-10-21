@@ -85,7 +85,7 @@ export default function Nav() {
                     ].map((s) => (
                       <NavigationMenuLink
                         key={s}
-                        href="#contact"
+                        href="#services"
                         className="hover:text-[#d4af37]"
                       >
                         {s}
@@ -177,7 +177,7 @@ export default function Nav() {
 
               {/* Links */}
               <div className="flex flex-col gap-6 text-lg font-medium">
-                {["Home", "Services", "Menu", "Gallery", "Contact"].map(
+                {["Home", "Services", "Menu", "Gallery", "footer"].map(
                   (item) => (
                     <a
                       key={item}

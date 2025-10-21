@@ -11,7 +11,6 @@ export default function WhatsAppButton() {
   const message = `Hello 👋, my name is ______. 
 I’d love to place an event booking or make an inquiry.`;
 
-  // ✅ Automatically close popup after 5 seconds
   useEffect(() => {
     if (showChat) {
       const timer = setTimeout(() => setShowChat(false), 5000);
@@ -33,13 +32,14 @@ I’d love to place an event booking or make an inquiry.`;
         onClick={() => setShowChat((prev) => !prev)}
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 z-50"
         animate={{
-          y: [0, -10, 0, -6, 0], // smoother, bouncy pattern
-          scale: [1, 1.05, 1],
+          y: [0, -12, 0, -8, 0, -6, 0], // bigger and smoother bounce
+          rotate: [0, 5, -5, 3, -3, 0], // subtle rotation for liveliness
+          scale: [1, 1.08, 1, 1.05, 1], // slight scaling
         }}
         transition={{
           repeat: Infinity,
           repeatType: "loop",
-          duration: 2,
+          duration: 2.5, // slower for smoothness
           ease: "easeInOut",
         }}
         aria-label="Chat on WhatsApp"
