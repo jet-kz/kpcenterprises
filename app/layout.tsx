@@ -18,7 +18,7 @@ const poppins = Poppins({
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "KP Enterprises; Luxury Catering & Event Experiences",
+  title: "KP Culinary Enterprises; Luxury Catering & Event Experiences",
   description:
     "KP Enterprises delivers unforgettable catering for weddings, corporate events, and private dinners. Book your event today!",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Mrs. Kelechi Pondi" }],
   openGraph: {
-    title: "KP Enterprises Culinary Luxury Catering & Event Experiences",
+    title: "KP Culinary Enterprises Luxury Catering & Event Experiences",
     description:
       "From intimate dinners to grand events, KP Culinary crafts exquisite culinary experiences tailored to your occasion.",
     siteName: "KP Culinary",
