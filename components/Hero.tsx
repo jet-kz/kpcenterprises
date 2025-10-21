@@ -63,8 +63,8 @@ export default function Hero() {
           Moments
         </h1>
         <p className="mt-4 text-lg text-gray-100 drop-shadow-lg">
-          We design unforgettable dining experiences — private dinners,
-          weddings, and bespoke events that delight every sense.
+          We design unforgettable dining experiences private dinners, weddings,
+          and bespoke events that delight every sense.
         </p>
 
         <div className="mt-8 flex justify-center gap-4">

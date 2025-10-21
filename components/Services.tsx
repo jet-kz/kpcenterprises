@@ -39,7 +39,7 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="relative overflow-hidden bg-white">
+    <section id="services" className="relative overflow-hidden bg-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 py-20 flex flex-col lg:flex-row items-center gap-12">
         {/* ---------- TEXT SECTION ---------- */}
         <motion.div

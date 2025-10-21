@@ -5,7 +5,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#6b3e26] text-white pt-16 pb-10">
+    <footer className="bg-[#6b3e26] text-white pt-16 pb-10" id="contact">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* ---------- Logo & Contact ---------- */}
         <div className="flex flex-col items-start gap-4">
@@ -30,8 +30,8 @@ export default function Footer() {
           </p>
           <p className="flex items-center gap-2">
             <MdPhone className="text-[#d4af37]" size={20} />
-            <a href="tel:+2347080125998" className="underline">
-              07080125998
+            <a href="tel:+2347080215998" className="underline">
+              07080215998
             </a>
           </p>
         </div>
@@ -94,8 +94,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-10 border-t border-[#d4af37] pt-6 text-center text-sm text-[#fff7e6]">
-        © {new Date().getFullYear()} KP Culinary Enterprises — All rights
-        reserved
+        © {new Date().getFullYear()} KP Culinary Enterprises All rights reserved
       </div>
     </footer>
   );
