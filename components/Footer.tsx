@@ -51,6 +51,15 @@ export default function Footer() {
               07080215998
             </a>
           </p>
+          <p className="flex items-center gap-2 text-gray-300">
+            <MdPhone className="text-[#d4af37]" size={20} />
+            <a
+              href="tel:+2348038923971"
+              className="underline hover:text-[#d4af37] transition-colors"
+            >
+              08038923971
+            </a>
+          </p>
         </div>
 
         {/* ---------- Why Choose Us ---------- */}
