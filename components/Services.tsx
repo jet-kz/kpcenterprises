@@ -81,14 +81,14 @@ export default function Hero() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#6b3e26] text-white font-medium rounded-full hover:bg-[#8b542d] hover:scale-105 transition-transform duration-300"
+              className="px-6 py-3 bg-black/70 backdrop-blur-lg text-white font-medium rounded-full bg-black/  hover:scale-105 transition-transform duration-300"
             >
               Place an Order
             </a>
 
             <a
               href="#menu"
-              className="inline-block text-sm underline underline-offset-4 text-[#d4af37] hover:text-[#6b3e26] transition-colors"
+              className="inline-block text-sm underline underline-offset-4 text-[#d4af37] hover:text-black transition-colors"
             >
               Explore Menu
             </a>
@@ -127,7 +127,7 @@ export default function Hero() {
       </div>
 
       {/* ---------- MARQUEE SECTION ---------- */}
-      <div className="relative border-t border-gray-100 bg-gradient-to-r from-[#fff7e6] via-white to-[#fff7e6] py-4 overflow-hidden">
+      <div className="relative border-t border-[#f8eccc]/40 bg-gradient-to-r from-[#fffdf8] via-[#fffaf0] to-[#fffdf8] py-4 overflow-hidden">
         <motion.div
           className="flex whitespace-nowrap animate-marquee"
           initial={{ x: 0 }}
@@ -143,7 +143,7 @@ export default function Hero() {
               {services.map(({ icon: Icon, text }, i) => (
                 <div
                   key={i + repeatIndex}
-                  className="flex items-center gap-2 px-5 py-2 bg-white/80 border border-[#f6e4c5] rounded-full shadow-sm text-[#6b3e26] font-medium"
+                  className="flex items-center gap-2 px-5 py-2 bg-white/85 border border-[#f6e4c5]/70 rounded-full shadow-sm text-black font-medium"
                 >
                   <Icon size={22} className="text-[#d4af37]" />
                   <span>{text}</span>

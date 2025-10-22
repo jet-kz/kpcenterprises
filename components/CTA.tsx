@@ -57,8 +57,8 @@ Please get back to me with a quote. Thank you! 🙏`;
 
   return (
     <section
-      id="contact"
-      className="py-16 bg-gradient-to-br from-[#fff7e6] via-white to-[#fff7e6]"
+      id="cta"
+      className="py-16 bg-gradient-to-b from-white via-[#fffbe6] to-[#f1e7bd]"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row gap-10 items-center">
         {/* ---------- TEXT SECTION ---------- */}
@@ -68,7 +68,7 @@ Please get back to me with a quote. Thank you! 🙏`;
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl font-bold text-[#6b3e26]">
+          <h3 className="text-3xl font-bold text-black">
             Ready to plan your event?
           </h3>
           <p className="mt-3 text-gray-600 max-w-md mx-auto lg:mx-0">
@@ -183,7 +183,7 @@ Please get back to me with a quote. Thank you! 🙏`;
           <div className="mt-6 flex justify-end">
             <button
               type="submit"
-              className="px-6 py-3 rounded-full bg-[#6b3e26] text-white font-medium hover:bg-[#8b542d] hover:scale-105 transition-transform duration-300"
+              className="px-6 py-3 rounded-full bg-black/70 backdrop-blur-lg text-white font-medium hover:bg-[#28211d] hover:scale-105 transition-transform duration-300"
             >
               Send via WhatsApp
             </button>

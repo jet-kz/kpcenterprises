@@ -147,7 +147,3 @@
   animation: marquee 30s linear infinite;
   width: max-content;
 }
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* so content isn’t hidden behind navbar */
-}

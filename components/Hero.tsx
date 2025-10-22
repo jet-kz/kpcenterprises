@@ -69,7 +69,7 @@ export default function Hero() {
 
         <div className="mt-8 flex justify-center gap-4">
           <a
-            href="#contact"
+            href="#cta"
             className="bg-[#d4af37] hover:bg-amber-500 text-black px-8 py-3 rounded-full font-semibold transition"
           >
             Start Planning

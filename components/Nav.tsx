@@ -29,9 +29,9 @@ export default function Nav() {
   return (
     <nav
       className={clsx(
-        "fixed top-0 w-full z-50 transition-all duration-500",
+        "fixed top-0 w-full z-50 transition-all duration-500 backdrop-blur-md",
         scrolled
-          ? "bg-[#3a1d06]/95 backdrop-blur-sm shadow-lg text-white"
+          ? "bg-black/60 shadow-lg text-white" // glassy black when scrolled
           : "bg-transparent text-white"
       )}
     >
@@ -157,7 +157,7 @@ export default function Nav() {
 
             <SheetContent
               side="right"
-              className="bg-[#2b1302] text-white border-l border-[#d4af37]/30 p-6"
+              className="bg-black/70 backdrop-blur-lg text-white border-l border-[#d4af37]/30 p-6"
             >
               {/* Header */}
               <div className="flex justify-between items-center mb-10">
@@ -177,7 +177,7 @@ export default function Nav() {
 
               {/* Links */}
               <div className="flex flex-col gap-6 text-lg font-medium">
-                {["Home", "Services", "Menu", "Gallery", "footer"].map(
+                {["Home", "Services", "Menu", "Gallery", "Contact"].map(
                   (item) => (
                     <a
                       key={item}
@@ -195,7 +195,7 @@ export default function Nav() {
               <div className="my-8 border-t border-[#d4af37]/40"></div>
 
               {/* CTA */}
-              <a href="#contact" onClick={handleLinkClick}>
+              <a href="#cta" onClick={handleLinkClick}>
                 <Button className="bg-[#d4af37] text-black w-full py-6 font-semibold text-base rounded-full hover:bg-amber-500 transition-all">
                   Book Event
                 </Button>

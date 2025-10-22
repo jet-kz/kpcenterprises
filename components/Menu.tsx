@@ -86,7 +86,7 @@ export default function Menu() {
   return (
     <section
       id="menu"
-      className="py-20 bg-gradient-to-b from-[#fff7e6] via-white to-[#fff7e6]"
+      className="py-20 bg-gradient-to-b from-white via-[#fffbe6] to-[#f1e7bd]"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
         {/* Title */}
@@ -94,12 +94,12 @@ export default function Menu() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-[#6b3e26]"
+          className="text-4xl font-bold text-black"
         >
           Our Signature Menu
         </motion.h2>
         <p className="mt-3 text-gray-600 text-lg max-w-2xl mx-auto">
-          Explore our diverse culinary offerings — handcrafted to delight every
+          Explore our diverse culinary offerings handcrafted to delight every
           palate.
         </p>
 
@@ -116,11 +116,11 @@ export default function Menu() {
               key={cat.name}
               onClick={() => setActiveCategory(cat.name)}
               className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-all duration-300
-                ${
-                  activeCategory === cat.name
-                    ? "bg-[#6b3e26] text-white shadow-lg"
-                    : "bg-white border border-[#f6e4c5] text-[#6b3e26] hover:bg-[#fff2cc]"
-                }`}
+            ${
+              activeCategory === cat.name
+                ? "bg-black/70 backdrop-blur-lg text-white shadow-md"
+                : "bg-white border border-[#ffe8a3] text-black hover:bg-[#f4f4a0]"
+            }`}
             >
               {cat.icon}
               {cat.name}
@@ -139,11 +139,11 @@ export default function Menu() {
           {active.dishes.map((dish) => (
             <motion.div
               key={dish.name}
-              className="p-6 rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-[#f6e4c5]"
+              className="p-6 rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-[#ffe8a3]"
               whileHover={{ y: -6 }}
             >
               <div className="flex items-center justify-between">
-                <h3 className="text-lg font-semibold text-[#6b3e26]">
+                <h3 className="text-lg font-semibold text-black">
                   {dish.name}
                 </h3>
                 <span className="text-[#d4af37] font-medium">{dish.price}</span>
